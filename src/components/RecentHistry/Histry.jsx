@@ -12,6 +12,8 @@ const Histry = ({
   return (
     <div className="col-span-1 h-screen bg-[#171717] border-r border-zinc-800 text-white flex flex-col">
       <div className="p-4 border-b border-zinc-800 flex items-center justify-between gap-2 mt-3 pt-2.5 flex-col">
+        <div className="absolute top-20 left-20 w-64 h-64  bg-amber-900 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right--20 w-64 h-64 bg-cyan-900 rounded-full blur-3xl"></div>
         <div>
           <h1 className="text-lg font-semibold tracking-wide font-sans ">
             Recent Chats
