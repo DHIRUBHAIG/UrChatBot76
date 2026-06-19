@@ -78,7 +78,11 @@ const Chat = ({ currentChat, setCurrentChat, onNewChat }) => {
 
       <div className="flex items-center justify-center gap-10 px-6 py-6 z-10">
         <div >
-          <h1 className="text-5xl font-bold text-cyan-600 ">Hello User 👋</h1>
+          <h1 className="text-5xl font-bold text-cyan-600">
+  {currentChat.length > 0
+    ? `Conversation • ${currentChat.length} messages`
+    : "Hello User 👋"}
+</h1>
           <p className="text-2xl font-semibold text-amber-500 mt-2">
             {currentChat.length > 0
               ? `Conversation • ${currentChat.length} messages`
